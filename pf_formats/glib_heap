@@ -1,0 +1,10 @@
+pf.r_tcache_perthread_struct_header qq[64]b[64]q prev_size size counts entries
+pf.r_tcache_perthread_struct [64]b[64]p counts entries
+pf.r_malloc_chunk_32 dddddd prev_size size fd bk fd_nextsize bk_nextsize
+pf.r_malloc_chunk_64 qqqqqq prev_size size fd bk fd_nextsize bk_nextsize
+pf.r_malloc_state_tcache_32 ddd[11]dpd[254]x[4]xpddxx mutex flags have_fast_chunks fastbinsY top last_remainder bins binmap next next_free attached_threads system_mem max_system_mem
+pf.r_malloc_state_tcache_64 ddd[10]q:qq[254]p[4]xqqd:x:x mutex flags have_fast_chunks fastbinsY top last_remainder bins binmap next next_free attached_threads system_mem max_system_mem
+pf.r_malloc_state_32 dd[10]ddd[254]x[4]xpdxx mutex flags fastbinsY top last_remainder bins binmap next next_free system_mem max_system_mem
+pf.r_malloc_state_64 dd[10]q:qq[254]p[4]dqqqq mutex flags fastbinsY top last_remainder bins binmap next next_free system_mem max_system_mem
+pf.r_heap_info_32 dddd ar_ptr prev size mprotect_size
+pf.r_heap_info_64 qqqq ar_ptr prev size mprotect_size
